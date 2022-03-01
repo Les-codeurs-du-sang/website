@@ -22,7 +22,11 @@
     <link href="{{ asset('assets/css/theme.css') }}" rel="stylesheet" />
 
 </head>
+@include('includes.navigation')
+
 @yield('content')
+
+@include('includes.footer')
 <body>
 
 <!-- ===============================================-->

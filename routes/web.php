@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BloodController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/HomeBlood', [\App\Http\Controllers\BloodController::class, 'home'])->name("HomeBlood");
+Route::get('/HomeBlood', [\App\Http\Controllers\BloodController::class, 'index'])->name("blood.home");
+
+Route::get('/blood-donation/create',  [\App\Http\Controllers\BloodController::class, 'create'])->name('blood.create');
 
 Route::get('/HomeBoneMarrow', [\App\Http\Controllers\BoneMarrowController::class, 'home'])->name("HomeBoneMarrow");
