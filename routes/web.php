@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BloodController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Don du sang
+Route::get('/', [BloodController::class, 'index'])->name('blood.home');
+Route::get('/blood-donation/create', [BloodController::class, 'create'])->name('blood.create');
