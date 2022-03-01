@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/HomeBlood', [\App\Http\Controllers\BloodController::class, 'home'])->name("HomeBlood");
+
+Route::get('/HomeBoneMarrow', [\App\Http\Controllers\BoneMarrowController::class, 'home'])->name("HomeBoneMarrow");
