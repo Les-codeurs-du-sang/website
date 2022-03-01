@@ -14,7 +14,7 @@ use App\Http\Controllers\BloodController;
 |
 */
 
-Route::get('/HomeBlood', [\App\Http\Controllers\BloodController::class, 'index'])->name("blood.home");
+Route::get('/', [\App\Http\Controllers\BloodController::class, 'index'])->name("blood.home");
 
 Route::get('/blood-donation/create',  [\App\Http\Controllers\BloodController::class, 'create'])->name('blood.create');
 
