@@ -14,6 +14,8 @@ use App\Http\Controllers\BloodController;
 |
 */
 
-// Don du sang
-Route::get('/', [BloodController::class, 'index'])->name('blood.home');
-Route::get('/blood-donation/create', [BloodController::class, 'create'])->name('blood.create');
+Route::get('/', [\App\Http\Controllers\BloodController::class, 'index'])->name("blood.home");
+
+Route::get('/blood-donation/create',  [\App\Http\Controllers\BloodController::class, 'create'])->name('blood.create');
+
+Route::get('/HomeBoneMarrow', [\App\Http\Controllers\BoneMarrowController::class, 'home'])->name("HomeBoneMarrow");
