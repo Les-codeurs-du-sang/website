@@ -57,7 +57,7 @@ class User extends Authenticatable
 
     public function journees() {
         return $this->belongsToMany('App\Models\Journee')->withPivot('heure_reservation');
-    };
+    }
     /**
      * The accessors to append to the model's array form.
      *
