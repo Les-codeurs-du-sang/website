@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class UpdateUserAddDate extends Migration
+class CreatePromotionsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,10 @@ class UpdateUserAddDate extends Migration
      */
     public function up()
     {
-        Schema::table('users', function (Blueprint $table)
-        {
-            $table->date('dateDernierDon');
+        Schema::create('promotions', function (Blueprint $table) {
+            $table->id();
+            $table->string('titre');
+            $table->timestamps();
         });
     }
 
@@ -26,6 +27,6 @@ class UpdateUserAddDate extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('promotions');
     }
 }

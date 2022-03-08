@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateReservation extends Migration
+class CreateJourneeUserTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,11 @@ class CreateReservation extends Migration
      */
     public function up()
     {
-        Schema::create('reservations', function (Blueprint $table) {
+        Schema::create('journee_user', function (Blueprint $table) {
             $table->id();
-            $table->time('heurePrise');
+            $table->unsignedBigInteger('journee_id');
+            $table->unsignedBigInteger('user_id');
+            $table->time('heure_reservation');
             $table->timestamps();
         });
     }
@@ -27,6 +29,6 @@ class CreateReservation extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('reservations');
+        Schema::dropIfExists('journee_user');
     }
 }

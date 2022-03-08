@@ -21,6 +21,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'dateDernierDon',
     ];
 
     /**
@@ -41,4 +42,8 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function journees() {
+        return $this->belongsToMany('App\Models\Journee')->withPivot('heure_reservation');
+    }
 }
