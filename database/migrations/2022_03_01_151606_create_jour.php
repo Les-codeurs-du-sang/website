@@ -29,6 +29,6 @@ class CreateJour extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('jour');
+        Schema::dropIfExists('jours');
     }
 }
