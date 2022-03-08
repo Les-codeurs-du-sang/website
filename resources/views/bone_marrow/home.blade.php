@@ -11,10 +11,11 @@
             <div class="container">
                 <div class="row flex-center">
                     <div class="col-lg-6 col-md-5 order-md-1 text-center text-md-end">
-                        <h1 class="fw-medium">Want anything to be<br />easy with <span class="fw-bold">LaslesVPN.</span></h1>
-                        <p class="mt-3 mb-4">Provide a network for all your needs with ease and fun using <span class="fw-medium">LaslesVPN </span>discover interesting features from us.Most people make the mistake of forcing themselves to network.Or they pretend to be outgoing to make new connections. </p><a class="btn btn-lg btn-danger hover-top btn-glow" href="#">Get Started </a>
+                        <h1 class="fw-medium">Faites don de votre moelle osseuse pour les plus démunies</h1>
+                        <p class="mt-3 mb-4">venez en aide à toute ces personne qui se doivent de souffrir dans l'attente que des gens comme vous leur vienne en aide.</p>
+                        <a class="btn btn-lg btn-warning top btn-glow" href="#">Get Started </a>
                     </div>
-                    <div class="col-md-7 col-lg-6 mt-5 "><img class="img-fluid" src="assets/img/illustrations/1.svg" alt="" /></div>
+                    <div class="col-md-7 col-lg-6 mt-5 "><img class="img-fluid" src="assets/img/illustrations/3.svg" alt="" /></div>
                 </div>
             </div>
             <!-- end of .container-->
@@ -100,31 +101,31 @@
                 <div class="row align-items-center">
                     <div class="col-md-5 col-lg-7 text-lg-center"><img class="img-fluid mb-5 mb-md-0" src="assets/img/illustrations/2.png" alt="" /></div>
                     <div class="col-md-7 col-lg-5 text-center text-md-start">
-                        <h2>We Provide Many <br />Features You Can Use</h2>
-                        <p> You can explore the features that we provide with fun and have their own functions each feature.</p>
+                        <h2>Vous avez des inquiétudes à propos du don de moelle osseuse</h2>
+                        <p>Vous vous inquiétez pour rien car :</p>
                         <div class="d-flex">
                             <svg class="bi bi-check-circle-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2FAB73" viewBox="0 0 16 16">
                                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
                             </svg>
-                            <p class="ms-2">Powerfull online protection.</p>
+                            <p class="ms-2">qu'une seule goutte de salive serra nécessaire.</p>
                         </div>
                         <div class="d-flex">
                             <svg class="bi bi-check-circle-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2FAB73" viewBox="0 0 16 16">
                                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
                             </svg>
-                            <p class="ms-2">Internet without borders.</p>
+                            <p class="ms-2">un questionnaire rapide à remplir sera donner.</p>
                         </div>
                         <div class="d-flex">
                             <svg class="bi bi-check-circle-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2FAB73" viewBox="0 0 16 16">
                                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
                             </svg>
-                            <p class="ms-2">Supercharged VPN.</p>
+                            <p class="ms-2">80% des dons se font par prise de sang.</p>
                         </div>
                         <div class="d-flex">
                             <svg class="bi bi-check-circle-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2FAB73" viewBox="0 0 16 16">
                                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
                             </svg>
-                            <p class="ms-2">Internet without borders.</p>
+                            <p class="ms-2">et il y a 0 rapport entre la moelle osseuse et la moelle épinière.</p>
                         </div>
                     </div>
                 </div>
@@ -144,10 +145,10 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-8 col-lg-5">
-                        <h2>Huge Global Network<br />of Fast VPN</h2>
-                        <p>See LaslesVPN everywhere to make it easier for you when you move locations.</p>
+                        <h2>⬇ le centre de don se fait ici ⬇</h2>
+                        <br>
                     </div>
-                    <div class="pt-8"><img class="img-fluid" src="assets/img/gallery/map.png" alt="" /></div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13847.56112997315!2d5.488406812144487!3d47.090545403283585!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x10455424f077465e!2sLycee%20Pasteur%20Mont%20Roland!5e0!3m2!1sfr!2sfr!4v1646744171774!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
                 </div>
             </div>
             <!-- end of .container-->
@@ -155,29 +156,6 @@
         </section>
         <!-- <section> close ============================-->
         <!-- ============================================-->
-
-
-
-
-        <!-- ============================================-->
-        <!-- <section> begin ============================-->
-        <section class="py-5 bg-100">
-
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-6 col-sm-4 col-md-2 mb-2 mb-md-0"><img class="img-fluid" src="assets/img/gallery/netflix.png" alt="" height="50" /></div>
-                    <div class="col-6 col-sm-4 col-md-2 mb-2 mb-md-0"><img class="img-fluid" src="assets/img/gallery/reddit.png" alt="" height="50" /></div>
-                    <div class="col-6 col-sm-4 col-md-2 mb-2 mb-md-0"><img class="img-fluid" src="assets/img/gallery/amazon.png" alt="" height="50" /></div>
-                    <div class="col-6 col-sm-4 col-md-2 mb-2 mb-sm-0"><img class="img-fluid" src="assets/img/gallery/discord.png" alt="" height="50" /></div>
-                    <div class="col-6 col-sm-4 col-md-2 mb-2 mb-sm-0"><img class="img-fluid" src="assets/img/gallery/spotify.png" alt="" height="50" /></div>
-                </div>
-            </div>
-            <!-- end of .container-->
-
-        </section>
-        <!-- <section> close ============================-->
-        <!-- ============================================-->
-
 
 
 
@@ -420,7 +398,7 @@
                                 <h2>Subscribe Now for <br />Get Special Features!</h2>
                                 <p class="mb-lg-0">Let's subscribe with us and find the fun.</p>
                             </div>
-                            <div class="col-12 col-lg-6 text-lg-end"><a class="btn btn-lg btn-danger hover-top btn-glow text-end" href="#">Subscribe Now</a></div>
+                            <div class="col-12 col-lg-6 text-lg-end"><a class="btn btn-lg btn-warning hover-top btn-glow text-end" href="#">Subscribe Now</a></div>
                         </div>
                     </div>
                 </div>
