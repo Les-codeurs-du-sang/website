@@ -18,7 +18,7 @@ Route::get('/', [\App\Http\Controllers\BloodController::class, 'index'])->name("
 
 Route::get('/blood-donation/create',  [\App\Http\Controllers\BloodController::class, 'create'])->name('blood.create');
 
-Route::get('/HomeBoneMarrow', [\App\Http\Controllers\BoneMarrowController::class, 'home'])->name("HomeBoneMarrow");
+Route::get('/blood-marrow', [\App\Http\Controllers\BoneMarrowController::class, 'home'])->name("blood_marrow.home");
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
