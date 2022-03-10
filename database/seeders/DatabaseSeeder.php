@@ -17,8 +17,10 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
         \App\Models\Promotion::factory(10)->create();
+        \App\Models\Question::factory(5)->create();
          $this->call(JourneeSeeder::class);
         //$this->call(PromotionSeeder::class);
         $this->call(UserSeeder::class);
+
     }
 }
