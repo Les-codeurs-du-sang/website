@@ -21,9 +21,9 @@
                 <p class="text-400 my-3">&copy; 2020 Your Company</p>
             </div>
             <div class="col-6 col-sm-4 col-lg-3 mb-3">
-                <h5 class="lh-lg">product </h5>
+                <h5 class="lh-lg">Don du sang</h5>
                 <ul class="list-unstyled mb-md-4 mb-lg-0">
-                    <li class="lh-lg"><a class="text-900 text-decoration-none" href="#!">Download</a></li>
+                    <li class="lh-lg"><a class="text-900 text-decoration-none" href="#!">Accueil</a></li>
                     <li class="lh-lg"><a class="text-900 text-decoration-none" href="#!">Pricing</a></li>
                     <li class="lh-lg"><a class="text-900 text-decoration-none" href="#!">Locations</a></li>
                     <li class="lh-lg"><a class="text-900 text-decoration-none" href="#!">Server</a></li>
