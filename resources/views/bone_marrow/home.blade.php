@@ -15,7 +15,7 @@
                         <p class="mt-3 mb-4">Venez en aide à toutes ces personnes qui se doivent de souffrir dans l'attente que des gens comme vous leur viennent en aide.</p>
                         <a class="btn btn-lg btn-warning top btn-glow" href="#about">En savoir plus</a>
                     </div>
-                    <div class="col-md-7 col-lg-6 mt-5 "><img class="img-fluid" src="assets/img/illustrations/3.svg" alt="" /></div>
+                    <div class="col-md-7 col-lg-6 mt-5 "><img class="img-fluid" src="{{ asset('assets/img/illustrations/3.svg') }}" alt="" /></div>
                 </div>
             </div>
             <!-- end of .container-->
