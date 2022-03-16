@@ -9,9 +9,21 @@
                 <li class="nav-item"><a class="nav-link {{ request()->routeIS('blood.home') ? 'active' : '' }}" aria-current="page" href="{{ route('blood.home') }}">Don du sang</a></li>
                 <li class="nav-item"><a class="nav-link {{ request()->routeIS('blood_marrow.home') ? 'active' : '' }}" href="{{ route('blood_marrow.home') }}">Moelle osseuse</a></li>
             </ul>
+            @guest
             <form class="d-flex py-3 py-lg-0">
-                <a class="btn {{ request()->routeIS('blood_marrow.home') ? 'btn-outline-warning' : 'btn-outline-danger' }} rounded-pill order-0">Se connecter</a>
+                <a href="{{ route('login') }}" class="btn {{ request()->routeIS('blood_marrow.home') ? 'btn-outline-warning' : 'btn-outline-danger' }} rounded-pill order-0">Se connecter</a>
             </form>
+            @else
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    {{ Auth::user()->name }}
+                </button>
+                <form action="{{ route('logout') }}" method="POST" class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    @csrf
+                    <button class="dropdown-item" type="submit">Se déconnecter</button>
+                </form>
+            </div>
+            @endguest
         </div>
     </div>
 </nav>
