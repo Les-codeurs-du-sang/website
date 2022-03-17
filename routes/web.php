@@ -23,3 +23,6 @@ Route::get('/blood-marrow', [\App\Http\Controllers\BoneMarrowController::class, 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+// Admin
+Route::get('/admin', [\App\Http\Controllers\AdminDashboardController::class, 'index'])->name('admin.index');

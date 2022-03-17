@@ -22,11 +22,12 @@
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
-    @include('includes.navigation')
-    @yield('content')
-    @include('includes.footer')
     <body class="font-sans antialiased">
         <x-jet-banner />
+
+        @include('includes.navigation')
+        @yield('content')
+        @include('includes.footer')
 
 
         @stack('modals')
