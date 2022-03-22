@@ -27,6 +27,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'promotion_id',
         'dateDernierDon',
     ];
 
@@ -57,6 +58,10 @@ class User extends Authenticatable
 
     public function journees() {
         return $this->belongsToMany('App\Models\Journee')->withPivot('heure_reservation');
+    }
+
+    public function promotion() {
+        return $this->belongsTo('App\Models\Promotion');
     }
     /**
      * The accessors to append to the model's array form.

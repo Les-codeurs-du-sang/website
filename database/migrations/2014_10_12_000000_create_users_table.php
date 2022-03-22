@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->date('dateDernierDon');
+            $table->date('dateDernierDon')->nullable();
             $table->unsignedBigInteger('promotion_id');
             $table->rememberToken();
             $table->foreignId('current_team_id')->nullable();
