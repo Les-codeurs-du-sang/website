@@ -10,7 +10,7 @@
                 <li class="nav-item"><a class="nav-link {{ request()->routeIS('blood_marrow.home') ? 'active' : '' }}" href="{{ route('blood_marrow.home') }}">Moelle osseuse</a></li>
             </ul>
             <form class="d-flex py-3 py-lg-0">
-                <a class="btn {{ request()->routeIS('blood_marrow.home') ? 'btn-outline-warning' : 'btn-outline-danger' }} rounded-pill order-0">Se connecter</a>
+                <a class="btn {{ request()->routeIS('blood_marrow.home') ? 'btn-outline-warning' : 'btn-outline-danger' }} rounded-pill order-0" href="{{ route('login') }}">Se connecter</a>
             </form>
         </div>
     </div>

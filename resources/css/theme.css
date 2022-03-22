@@ -3511,6 +3511,7 @@ fieldset:disabled .btn {
   box-shadow: none;
 }
 
+
 .btn-primary {
   color: #fff;
   background-color: #387BF5;
@@ -17511,6 +17512,9 @@ label {
 /*-----------------------------------------------
 |   Backgrounds
 -----------------------------------------------*/
+.is-center {
+    text-align: center !important;
+}
 .bg-holder {
   position: absolute;
   width: 100%;
