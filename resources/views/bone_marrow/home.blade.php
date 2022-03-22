@@ -11,7 +11,11 @@
             <div class="container">
                 <div class="row flex-center">
                     <div class="col-lg-6 col-md-5 order-md-1 text-center text-md-end">
-                        <h1 class="fw-medium">Faites don de votre moelle osseuse pour les plus démunies</h1>
+                        <div class="contentBoneMarrow">
+                            <h2 class="fw-medium">Donnez votre moelle osseuse</h2>
+                            <h2 class="fw-medium">Donnez votre moelle osseuse</h2>
+                        </div>
+                        <br><br>
                         <p class="mt-3 mb-4">Venez en aide à toutes ces personnes qui se doivent de souffrir dans l'attente que des gens comme vous leur viennent en aide.</p>
                         <a class="btn btn-lg btn-warning top btn-glow" href="#about">En savoir plus</a>
                     </div>
@@ -96,12 +100,22 @@
 
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-md-5 col-lg-7 text-lg-center px-10"><img class="img-fluid mb-5 mb-md-0" width="450px" src="{{ asset('assets/img/illustrations/injured.svg') }}" alt="" /></div>
+                    <div class="col-md-5 col-lg-7 text-lg-center px-10">
+                        <div data-aos="fade-right">
+                            <img class="img-fluid mb-5 mb-md-0" width="450px" src="{{ asset('assets/img/illustrations/injured.svg') }}" alt="" />
+                        </div>
+                    </div>
                     <div class="col-md-7 col-lg-5 text-center text-md-start">
-                        <h2>Qui à besoin d'un don ?</h2>
-                        <p>De nombreuses personnes qui ont une maladie grave du sang.</p>
+                        <div data-aos="fade-left">
+                            <h2>Qui à besoin d'un don ?</h2>
+                        </div>
+                        <div data-aos="fade-left">
+                            <p>De nombreuses personnes qui ont une maladie grave du sang.</p>
+                        </div>
                         <div class="d-flex">
-                            <p>Cela représente des milliers d’enfants et d’adultes, en France comme à l’étranger. De quelles maladies parle-t-on ? On pense aux leucémies bien sûr. Mais cela peut aussi soigner des aplasies médullaires, des maladies métaboliques ou génétiques (déficit immunitaire, adrénoleucodystrophie…). Et bien d’autres encore. Autant de maladies dont l’origine est un dysfonctionnement de la moelle osseuse.</p>
+                            <div data-aos="fade-left">
+                                <p>Cela représente des milliers d’enfants et d’adultes, en France comme à l’étranger. De quelles maladies parle-t-on ? On pense aux leucémies bien sûr. Mais cela peut aussi soigner des aplasies médullaires, des maladies métaboliques ou génétiques (déficit immunitaire, adrénoleucodystrophie…). Et bien d’autres encore. Autant de maladies dont l’origine est un dysfonctionnement de la moelle osseuse.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -113,23 +127,41 @@
             <div class="container">
                 <div class="row align-items-center pt-5">
                     <div class="col-md-7 col-lg-5 text-right text-md-end">
-                        <h2>Le prélèvement de moelle osseuse, comment ça marche ?</h2>
-                        <p>Il existe 2 méthodes pour le prélèvement de moelle osseuse.</p>
-                        <div class="d-flex justify-content-end">
-                            <p class="mr-2">Soit on prélève dans le sang : on parle de cytaphérèse*</p>
-                            <svg class="bi bi-check-circle-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2FAB73" viewBox="0 0 16 16">
-                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
-                            </svg>
+                        <div data-aos="fade-right">
+                            <h2>Le prélèvement de moelle osseuse, comment ça marche ?</h2>
+                        </div>
+                        <div data-aos="fade-right">
+                            <p>Il existe 2 méthodes pour le prélèvement de moelle osseuse.</p>
                         </div>
                         <div class="d-flex justify-content-end">
-                            <p class="mr-2">Soit on prélève par ponction dans les os postérieurs du bassin</p>
-                            <svg class="bi bi-check-circle-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2FAB73" viewBox="0 0 16 16">
-                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
-                            </svg>
+                            <div data-aos="fade-right">
+                                <p class="mr-2">Soit on prélève dans le sang : on parle de cytaphérèse*</p>
+                            </div>
+                            <div data-aos="zoom-in">
+                                <svg class="bi bi-check-circle-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2FAB73" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                                </svg>
+                            </div>
                         </div>
-                        <p>Dans 80% des cas, le don de cellules de la moelle osseuse se fait par prélèvement sanguin.</p>
+                        <div class="d-flex justify-content-end">
+                            <div data-aos="fade-right">
+                                <p class="mr-2">Soit on prélève par ponction dans les os postérieurs du bassin</p>
+                            </div>
+                            <div data-aos="zoom-in">
+                                <svg class="bi bi-check-circle-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2FAB73" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div data-aos="fade-right">
+                            <p>Dans 80% des cas, le don de cellules de la moelle osseuse se fait par prélèvement sanguin.</p>
+                        </div>
                     </div>
-                    <div class="col-md-5 col-lg-7 text-lg-center px-10"><img class="img-fluid my-5 mb-md-0" width="600px" src="{{ asset('assets/img/illustrations/medical_research.svg') }}" alt="" /></div>
+                    <div class="col-md-5 col-lg-7 text-lg-center px-10">
+                        <div data-aos="fade-left">
+                             <img class="img-fluid my-5 mb-md-0" width="600px" src="{{ asset('assets/img/illustrations/medical_research.svg') }}" alt="" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -140,29 +172,51 @@
 
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-md-5 col-lg-7 text-lg-center"><img class="img-fluid mb-md-0 m-lg-auto" width="450px" src="{{ asset('assets/img/illustrations/diary.svg') }}" alt="" /></div>
+                    <div class="col-md-5 col-lg-7 text-lg-center">
+                        <div data-aos="fade-right">
+                            <img class="img-fluid mb-md-0 m-lg-auto" width="450px" src="{{ asset('assets/img/illustrations/diary.svg') }}" alt="" />
+                        </div>
+                    </div>
                     <div class="col-md-7 col-lg-5 text-center text-md-start">
-                        <h2>Qui peut être donneur ?</h2>
-                        <p>Si vous cochez ces 3 cases, le registre national des donneurs de moelle osseuse vous attend !</p>
-                        <div class="d-flex">
-                            <svg class="bi bi-check-circle-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2FAB73" viewBox="0 0 16 16">
-                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
-                            </svg>
-                            <p class="ms-2">Avoir entre 18 et 35 ans au moment de l’inscription</p>
+                        <div data-aos="fade-left">
+                            <h2>Qui peut être donneur ?</h2>
+                        </div>
+                        <div data-aos="fade-left">
+                            <p>Si vous cochez ces 3 cases, le registre national des donneurs de moelle osseuse vous attend !</p>
                         </div>
                         <div class="d-flex">
-                            <svg class="bi bi-check-circle-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2FAB73" viewBox="0 0 16 16">
-                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
-                            </svg>
-                            <p class="ms-2">Être en parfaite santé</p>
+                            <div data-aos="zoom-in">
+                                <svg class="bi bi-check-circle-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2FAB73" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                                </svg>
+                            </div>
+                            <div data-aos="fade-left">
+                                <p class="ms-2">Avoir entre 18 et 35 ans au moment de l’inscription</p>
+                            </div>
                         </div>
                         <div class="d-flex">
-                            <svg class="bi bi-check-circle-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2FAB73" viewBox="0 0 16 16">
-                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
-                            </svg>
-                            <p class="ms-2">Répondre à un questionnaire de santé. </p>
+                            <div data-aos="zoom-in">
+                                <svg class="bi bi-check-circle-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2FAB73" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                                </svg>
+                            </div>
+                            <div data-aos="fade-left">
+                                <p class="ms-2">Être en parfaite santé</p>
+                            </div>
                         </div>
-                        <p>Ensuite un prélèvement salivaire ou une prise de sang sera effectuer pour établir votre "carte d’identité biologique".</p>
+                        <div class="d-flex">
+                            <div data-aos="zoom-in">
+                                <svg class="bi bi-check-circle-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2FAB73" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                                </svg>
+                            </div>
+                            <div data-aos="fade-left">
+                                <p class="ms-2">Répondre à un questionnaire de santé. </p>
+                            </div>
+                        </div>
+                        <div data-aos="fade-left">
+                            <p>Ensuite un prélèvement salivaire ou une prise de sang sera effectuer pour établir votre "carte d’identité biologique".</p>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -14,7 +14,11 @@
                 <div class="row flex-center">
                     <div class="col-lg-6 col-md-5 order-md-1"><img class="img-fluid" src="assets/img/illustrations/1.svg" alt="" /></div>
                     <div class="col-md-7 col-lg-6 mt-5 text-center text-md-start">
-                        <h1 class="fw-medium">Donnez votre <span class="fw-bold">sang!</span></h1>
+                        <div class="contentBlood">
+                            <h2 class="fw-medium">Donnez votre <span class="fw-bold">sang!</span></h2>
+                            <h2 class="fw-medium">Donnez votre <span class="fw-bold">sang!</span></h2>
+                        </div>
+                        <br><br>
                         <p class="mt-3 mb-4">Un don de sang est un processus par lequel un donneur de sang est volontaire pour se voir prélever du sang qui sera gardé dans une banque du sang avant de transfuser une personne malade lors d'une transfusion sanguine. Wikipédia</p>
                         <a class="btn btn-lg btn-danger hover-top btn-glow" href="{{ route('blood.create') }}">S'inscrire</a>
                     </div>
@@ -102,33 +106,57 @@
 
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-md-5 col-lg-7 p-8 text-lg-center"><img class="img-fluid mb-5 mb-md-0" src="{{ asset('assets/img/illustrations/hero.svg') }}" alt="" /></div>
+                    <div class="col-md-5 col-lg-7 p-8 text-lg-center">
+                        <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="200">
+                            <img class="img-fluid mb-5 mb-md-0" src="{{ asset('assets/img/illustrations/hero.svg') }}" alt="" />
+                        </div>
+                    </div>
                     <div class="col-md-7 col-lg-5 text-center text-md-start">
-                        <h2>Pourquoi donner son sang ?</h2>
-                        <p> Donner son sang, c'est sauver des vies.</p>
-                        <div class="d-flex">
-                            <svg class="bi bi-check-circle-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2FAB73" viewBox="0 0 16 16">
-                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
-                            </svg>
-                            <p class="ms-2">Vos dons aident les personnes atteintes d’un cancer ou d’une maladie du sang !</p>
+                        <div data-aos="fade-left">
+                            <h2>Pourquoi donner son sang ?</h2>
+                        </div>
+                        <div data-aos="fade-left" data-aos-offset="200" data-aos-duration="200">
+                            <p> Donner son sang, c'est sauver des vies.</p>
                         </div>
                         <div class="d-flex">
-                            <svg class="bi bi-check-circle-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2FAB73" viewBox="0 0 16 16">
-                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
-                            </svg>
-                            <p class="ms-2">Les dons de sangs permettent de soigner 1 million de personnes chaque année.</p>
+                            <div data-aos="zoom-in">
+                                <svg class="bi bi-check-circle-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2FAB73" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                                </svg>
+                            </div>
+                            <div data-aos="fade-left" data-aos-offset="200" data-aos-duration="200">
+                                <p class="ms-2">Vos dons aident les personnes atteintes d’un cancer ou d’une maladie du sang !</p>
+                            </div>
                         </div>
                         <div class="d-flex">
-                            <svg class="bi bi-check-circle-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2FAB73" viewBox="0 0 16 16">
-                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
-                            </svg>
-                            <p class="ms-2">Donner son sang ne prend qu’1 heure, mais le service rendu est démultiplié.</p>
+                            <div data-aos="zoom-in">
+                                <svg class="bi bi-check-circle-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2FAB73" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                                </svg>
+                            </div>
+                            <div data-aos="fade-left" data-aos-offset="200" data-aos-duration="200">
+                                <p class="ms-2">Les dons de sangs permettent de soigner 1 million de personnes chaque année.</p>
+                            </div>
                         </div>
                         <div class="d-flex">
-                            <svg class="bi bi-check-circle-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2FAB73" viewBox="0 0 16 16">
-                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
-                            </svg>
-                            <p class="ms-2">Donner son sang réduit l’épaisseur du sang et l’aide ainsi à mieux circuler.</p>
+                            <div data-aos="zoom-in">
+                                <svg class="bi bi-check-circle-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2FAB73" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                                </svg>
+                            </div>
+                            <div data-aos="fade-left" data-aos-offset="200" data-aos-duration="200">
+                                <p class="ms-2">Donner son sang ne prend qu’1 heure, mais le service rendu est démultiplié.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div data-aos="zoom-in">
+                                <svg class="bi bi-check-circle-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2FAB73" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                                </svg>
+                            </div>
+                            <div data-aos="fade-left" data-aos-offset="200" data-aos-duration="200">
+                                <p class="ms-2">Donner son sang réduit l’épaisseur du sang et l’aide ainsi à mieux circuler.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -147,8 +175,12 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-8 col-lg-5">
-                        <h2>Trouver un site de don du sang.</h2>
-                        <p>Les sites de don du sang près de chez vous</p>
+                        <div data-aos="fade-left">
+                            <h2>Trouver un site de don du sang.</h2>
+                        </div>
+                        <div data-aos="fade-right">
+                            <p>Les sites de don du sang près de chez vous</p>
+                        </div>
                     </div>
                     <iframe src="https://arcg.is/y5qze" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
@@ -166,21 +198,29 @@
             <div class="container">
                 <div class="row flex-center">
                     <div class="col-md-8 col-lg-5 text-center">
-                        <h2>La réponse à vos questions</h2>
-                        <p>Voici les réponses aux questions les plus posées</p>
+                        <div data-aos="fade-left">
+                            <h2>La réponse à vos questions</h2>
+                        </div>
+                        <div data-aos="fade-right">
+                            <p>Voici les réponses aux questions les plus posées</p>
+                        </div>
                     </div>
                 </div>
                 <div class="accordion" id="accordionPanelsStayOpenExample">
                     @foreach($questions as $question)
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="panelsStayOpen-heading{{ $question->id }}">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse{{ $question->id }}" aria-expanded="true" aria-controls="panelsStayOpen-collapse{{ $question->id }}">
-                                <strong>{{ $question->question }}</strong>
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapse{{ $question->id }}" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-heading{{ $question->id }}">
-                            <div class="accordion-body">
-                                {{ $question->reponse }}
+                        <div data-aos="fade-left">
+                            <h2 class="accordion-header" id="panelsStayOpen-heading{{ $question->id }}">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse{{ $question->id }}" aria-expanded="true" aria-controls="panelsStayOpen-collapse{{ $question->id }}">
+                                    <strong>{{ $question->question }}</strong>
+                                </button>
+                            </h2>
+                        </div>
+                        <div data-aos="fade-right">
+                            <div id="panelsStayOpen-collapse{{ $question->id }}" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-heading{{ $question->id }}">
+                                <div class="accordion-body">
+                                    {{ $question->reponse }}
+                                </div>
                             </div>
                         </div>
                     </div>
