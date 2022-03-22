@@ -9,8 +9,18 @@
                 </div>
             </div>
             <div class="card-body">
-                <form method="post" action="{{ route('admin.users.index') }}">
+                <form method="post" action="{{ route('admin.users.store') }}">
                     @include('admin.include.fields')
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Mot de passe</label>
+                        <input name="password" type="password" class="form-control" id="exampleInputPassword1">
+                        @error('password')
+                        <div class="alert alert-danger mt-2" role="alert">
+                            {{ $message }}
+                        </div>
+                        @enderror
+                    </div>
+                    <button type="submit" class="btn btn-primary">Ajouter</button>
                 </form>
             </div>
         </div>

@@ -20,11 +20,25 @@ class UserController extends Controller
 
     public function create() {
         $promotions = Promotion::all();
-        return view('admin.users.create', compact('promotions'));
+        $user = new User();
+        return view('admin.users.create', compact('promotions', 'user'));
     }
 
-    public function edit(Request $request) {
-        return view();
+    public function edit(User $user) {
+        $promotions = Promotion::all();
+        return view('admin.users.edit', compact('user', 'promotions'));
+    }
+
+    public function update(User $user, Request $request) {
+        $data = $request->validate([
+            'name' => 'required|unique:users,name',
+            'promotion' => 'required|exists:promotions,id',
+            'mail' => 'required|email',
+        ]);
+
+        $user->update($data);
+
+        return redirect()->route('admin.users.index');
     }
 
     public function store(Request $request) {
