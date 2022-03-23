@@ -33,3 +33,6 @@ Route::get('/admin/users/create', [\App\Http\Controllers\UserController::class, 
 Route::post('/admin/users', [\App\Http\Controllers\UserController::class, 'store'])->name('admin.users.store');
 Route::get('/admin/users/{user}/edit', [\App\Http\Controllers\UserController::class, 'edit'])->name('admin.users.edit');
 Route::put('/admin/users/{user}', [\App\Http\Controllers\UserController::class, 'update'])->name('admin.users.update');
+
+// Promotions
+Route::get('/admin/promotions', [\App\Http\Controllers\PromotionController::class, 'index'])->name('admin.promotion.index');

@@ -8,8 +8,10 @@
             <h6 class="font-weight-bolder mb-0">
                 @if(request()->routeIS('admin.index'))
                     Tableau de bord
-                @elseif(request()->routeIS('admin.users.index'))
+                @elseif(Request::is('admin/users*'))
                     Utilisateurs
+                @elseif(Request::is('admin/promotions*'))
+                    Promotions
                 @else
                     Dashboard
                 @endif
