@@ -16,4 +16,21 @@ class PromotionController extends Controller
         $promotions = Promotion::all();
         return view('admin.promotion.index', compact('promotions'));
     }
+
+    public function create() {
+        $promotion = new Promotion();
+        return view('admin.promotion.create', compact('promotion'));
+    }
+
+    public function store(Request $request) {
+        $data = $request->validate([
+            'titre' => 'required|unique:promotions,titre',
+        ]);
+
+        Promotion::create([
+            'titre' => $request->titre,
+        ]);
+
+        return redirect()->route('admin.promotion.index');
+    }
 }

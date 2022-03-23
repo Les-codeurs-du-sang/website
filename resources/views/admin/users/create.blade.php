@@ -13,7 +13,7 @@
                     @include('admin.include.fields')
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Mot de passe</label>
-                        <input name="password" type="password" class="form-control" id="exampleInputPassword1">
+                        <input name="password" type="password" class="form-control" id="exampleInputPassword1" required>
                         @error('password')
                         <div class="alert alert-danger mt-2" role="alert">
                             {{ $message }}

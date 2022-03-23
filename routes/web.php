@@ -36,3 +36,5 @@ Route::put('/admin/users/{user}', [\App\Http\Controllers\UserController::class, 
 
 // Promotions
 Route::get('/admin/promotions', [\App\Http\Controllers\PromotionController::class, 'index'])->name('admin.promotion.index');
+Route::get('/admin/promotions/create', [\App\Http\Controllers\PromotionController::class, 'create'])->name('admin.promotion.create');
+Route::post('/admin/promotions', [\App\Http\Controllers\PromotionController::class, 'store'])->name('admin.promotion.store');

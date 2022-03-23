@@ -6,7 +6,7 @@
             <div class="card-header pb-0">
                 <div class="d-flex justify-content-between align-items-center">
                     <h6>Promotions</h6>
-                    <a class="btn btn-primary" href="{{ route('admin.users.create') }}">Ajouter une promotion</a>
+                    <a class="btn btn-primary" href="{{ route('admin.promotion.create') }}">Ajouter une promotion</a>
                 </div>
             </div>
             <div class="card-body px-0 pt-0 pb-2">
