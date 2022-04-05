@@ -178,7 +178,7 @@
                                 <strong>{{ $question->question }}</strong>
                             </button>
                         </h2>
-                        <div id="panelsStayOpen-collapse{{ $question->id }}" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-heading{{ $question->id }}">
+                        <div id="panelsStayOpen-collapse{{ $question->id }}" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading{{ $question->id }}">
                             <div class="accordion-body">
                                 {{ $question->reponse }}
                             </div>

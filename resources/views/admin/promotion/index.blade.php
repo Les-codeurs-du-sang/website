@@ -36,8 +36,8 @@
                                     <span class="text-secondary text-xs font-weight-bold"></span>
                                 </td>
                                 <td class="align-middle">
-                                    <a href="" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                                        Edit
+                                    <a href="{{ route('admin.promotion.edit', $promotion->id) }}" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                                        Modifier
                                     </a>
                                 </td>
                             </tr>

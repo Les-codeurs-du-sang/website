@@ -31,6 +31,22 @@ class PromotionController extends Controller
             'titre' => $request->titre,
         ]);
 
-        return redirect()->route('admin.promotion.index');
+        return redirect()->route('admin.promotion.index')->with('success', 'L\'utilisateur à correctement été ajouté !');
+    }
+
+    public function edit(Promotion $promotion)
+    {
+        return view('admin.promotion.edit', compact('promotion'));
+    }
+
+    public function update(Promotion $promotion, Request $request)
+    {
+        $data = $request->validate([
+            'titre' => 'required|unique:promotions,titre',
+        ]);
+
+        $promotion->update($data);
+
+        return redirect()->route('admin.promotion.index')->with('success', 'La promotion à correctement été modifié !');
     }
 }

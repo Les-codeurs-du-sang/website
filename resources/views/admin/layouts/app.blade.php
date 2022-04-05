@@ -41,6 +41,11 @@
 <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg ">
     @include('admin.include.navbar')
     <div class="container-fluid py-4">
+        @if (session()->has('success'))
+        <div class="alert alert-success" role="alert">
+            {{ session()->get('success') }}
+        </div>
+        @endif
     @yield('content')
     @include('admin.include.footer')
     </div>

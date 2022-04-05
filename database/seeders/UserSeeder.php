@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Models\Promotion;
 use Illuminate\Database\Seeder;
 use App\Models\User;
+use Illuminate\Support\Str;
 
 class UserSeeder extends Seeder
 {
@@ -23,5 +24,13 @@ class UserSeeder extends Seeder
             $journee = \App\Models\Journee::inRandomOrder()->first();
             $user->journees()->attach($journee->id, ['heure_reservation' => now()]);
         });
+
+        User::create([
+            'name' => 'admin admin',
+            'email' => 'admin@admin.fr',
+            'password' => '$2y$10$NvP8.zszKNBGixe3u7jdJ.1bdTfGC8ANpL6GZRPNbJfliMKglZ4/q',
+            'remember_token' => Str::random(10),
+            'promotion_id' => 1
+        ]);
     }
 }

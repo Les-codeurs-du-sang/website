@@ -38,7 +38,7 @@ class UserController extends Controller
 
         $user->update($data);
 
-        return redirect()->route('admin.users.index');
+        return redirect()->route('admin.users.index')->with('success', 'L\'utilisateur à correctement été modifié !');
     }
 
     public function store(Request $request) {
@@ -46,7 +46,7 @@ class UserController extends Controller
         $request->validate([
             'name' => 'required|unique:users,name',
             'promotion' => 'required|exists:promotions,id',
-            'mail' => 'required|email',
+            'mail' => 'required|email|unique:users,email',
             'password' => 'required|password',
         ]);
 
@@ -58,7 +58,7 @@ class UserController extends Controller
             'dateDernierDon' => null,
         ]);
 
-        return redirect()->route('admin.users.index');
+        return redirect()->route('admin.users.index')->with('success', 'L\'utilisateur à correctement été ajouté !');
     }
 
 }
