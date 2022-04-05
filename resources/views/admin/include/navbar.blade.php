@@ -12,6 +12,8 @@
                     Utilisateurs
                 @elseif(Request::is('admin/promotions*'))
                     Promotions
+                @elseif(Request::is('admin/questions*'))
+                    Questions
                 @else
                     Dashboard
                 @endif

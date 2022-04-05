@@ -31,7 +31,7 @@ class PromotionController extends Controller
             'titre' => $request->titre,
         ]);
 
-        return redirect()->route('admin.promotion.index')->with('success', 'L\'utilisateur à correctement été ajouté !');
+        return redirect()->route('admin.promotion.index')->with('success', 'La promotion à correctement été ajouté !');
     }
 
     public function edit(Promotion $promotion)

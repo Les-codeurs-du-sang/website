@@ -40,3 +40,11 @@ Route::get('/admin/promotions/create', [\App\Http\Controllers\PromotionControlle
 Route::post('/admin/promotions', [\App\Http\Controllers\PromotionController::class, 'store'])->name('admin.promotion.store');
 Route::get('/admin/promotions/{promotion}/edit', [\App\Http\Controllers\PromotionController::class, 'edit'])->name('admin.promotion.edit');
 Route::patch('/admin/promotions/{promotion}', [\App\Http\Controllers\PromotionController::class, 'update'])->name('admin.promotion.update');
+
+// Questions
+Route::get('/admin/questions', [\App\Http\Controllers\QuestionController::class, 'index'])->name('admin.question.index');
+Route::get('/admin/questions/{question}/show', [\App\Http\Controllers\QuestionController::class, 'show'])->name('admin.question.show');
+Route::get('/admin/questions/create', [\App\Http\Controllers\QuestionController::class, 'create'])->name('admin.question.create');
+Route::post('/admin/questions', [\App\Http\Controllers\QuestionController::class, 'store'])->name('admin.question.store');
+Route::get('/admin/questions/{question}/edit', [\App\Http\Controllers\QuestionController::class, 'edit'])->name('admin.question.edit');
+Route::patch('/admin/questions/{question}', [\App\Http\Controllers\QuestionController::class, 'update'])->name('admin.question.update');
