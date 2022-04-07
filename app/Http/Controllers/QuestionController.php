@@ -60,4 +60,11 @@ class QuestionController extends Controller
 
         return redirect()->route('admin.question.show', $question->id)->with('success', 'La question à correctement été modifié !');
     }
+
+    public function delete(Question $question)
+    {
+        $question->delete();
+
+        return redirect()->route('admin.question.index')->with('success', 'La question à correctement été supprimé !');
+    }
 }

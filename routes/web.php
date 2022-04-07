@@ -48,3 +48,4 @@ Route::get('/admin/questions/create', [\App\Http\Controllers\QuestionController:
 Route::post('/admin/questions', [\App\Http\Controllers\QuestionController::class, 'store'])->name('admin.question.store');
 Route::get('/admin/questions/{question}/edit', [\App\Http\Controllers\QuestionController::class, 'edit'])->name('admin.question.edit');
 Route::patch('/admin/questions/{question}', [\App\Http\Controllers\QuestionController::class, 'update'])->name('admin.question.update');
+Route::delete('/admin/questions/{question}/delete', [\App\Http\Controllers\QuestionController::class, 'delete'])->name('admin.question.delete');
