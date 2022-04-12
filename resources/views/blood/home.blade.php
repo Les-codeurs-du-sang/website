@@ -145,7 +145,7 @@
                                 </svg>
                             </div>
                             <div data-aos="fade-left" data-aos-offset="200" data-aos-duration="200">
-                                <p class="ms-2">Donner son sang ne prend qu’1 heure, mais le service rendu est démultiplié.</p>
+                                <p class="ms-2">Donner son sang ne prend qu’une heure, mais le service rendu est démultiplié.</p>
                             </div>
                         </div>
                         <div class="d-flex">
@@ -211,13 +211,13 @@
                     <div class="accordion-item">
                         <div data-aos="fade-left">
                             <h2 class="accordion-header" id="panelsStayOpen-heading{{ $question->id }}">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse{{ $question->id }}" aria-expanded="true" aria-controls="panelsStayOpen-collapse{{ $question->id }}">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse{{ $question->id }}" aria-expanded="false" aria-controls="panelsStayOpen-collapse{{ $question->id }}">
                                     <strong>{{ $question->question }}</strong>
                                 </button>
                             </h2>
                         </div>
                         <div data-aos="fade-right">
-                            <div id="panelsStayOpen-collapse{{ $question->id }}" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-heading{{ $question->id }}">
+                            <div id="panelsStayOpen-collapse{{ $question->id }}" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading{{ $question->id }}">
                                 <div class="accordion-body">
                                     {{ $question->reponse }}
                                 </div>

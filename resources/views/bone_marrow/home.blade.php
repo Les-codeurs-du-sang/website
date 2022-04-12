@@ -136,7 +136,7 @@
                         </div>
                         <div class="d-flex justify-content-end">
                             <div data-aos="fade-right">
-                                <p class="mr-2">Soit on prélève dans le sang : on parle de cytaphérèse*</p>
+                                <p class="mr-2">Soit on prélève dans le sang : on parle de <a class="lien" href="https://www.e-cancer.fr/Dictionnaire/C/cytapherese">cytaphérèse*</a></p>
                             </div>
                             <div data-aos="zoom-in">
                                 <svg class="bi bi-check-circle-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2FAB73" viewBox="0 0 16 16">

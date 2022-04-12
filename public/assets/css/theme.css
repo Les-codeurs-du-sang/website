@@ -18387,6 +18387,26 @@ label {
         text-shadow: 0 0 0 rgba(0, 0, 0, 0);
     }
 }
+
+.lien:link {
+    color: #fdbf06;
+    text-decoration: none;
+}
+
+.lien:visited {
+    color: #fdbf06;
+    text-decoration: none;
+}
+
+.lien:hover {
+    color: #fdbf06;
+    text-decoration: underline;
+}
+
+.lien:active {
+    color: #fdbf06;
+    text-decoration: underline;
+}
 /*-----------------------------------------------
 |   User Styles
 -----------------------------------------------*/
