@@ -14,7 +14,7 @@
                                 <div class="text-center">
                                     <h1 class="h4 text-gray-900 mb-4"></h1>
                                 </div>
-                                <img class="img-center" src="assets/img/illustrations/a-3.png"/>
+                                <img class="img-center" src="assets/img/illustrations/log in.png"/>
                             </div>
                             <div class="col-lg-6">
                                 <div class="p-5">
@@ -49,12 +49,13 @@
                                             <div class="text-center">
                                                 <br>
                                                 <hr>
-                                                <x-jet-button class="btn btn-primary">
+                                                <x-jet-button class="btn btn-danger">
                                                     {{ __('Log in') }}
                                                 </x-jet-button>
                                                 <br>
                                                 @if (Route::has('password.request'))
                                                     <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
+                                                        <br>
                                                         {{ __('Forgot your password?') }}
                                                     </a>
                                                 @endif

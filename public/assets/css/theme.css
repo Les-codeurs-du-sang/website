@@ -18199,6 +18199,22 @@ label {
     animation: animateBoneMarrow 4s ease-in-out infinite;
 }
 
+.contentLogin h2 {
+    color: #fff;
+    font-size: 2.85em;
+    position: absolute;
+}
+
+.contentLogin h2:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px #fec007;
+}
+
+.contentLogin h2:nth-child(2) {
+    color: #fec007;
+    animation: animateLogin 4s ease-in-out infinite;
+}
+
 @keyframes animateBlood {
     0%,
     100% {
@@ -18261,6 +18277,116 @@ label {
     }
 }
 
+@keyframes animateLogin {
+    0%,
+    100% {
+        clip-path: polygon(
+            0% 45%,
+            16% 44%,
+            33% 50%,
+            54% 60%,
+            70% 61%,
+            84% 59%,
+            100% 52%,
+            100% 100%,
+            0% 100%
+        );
+    }
+
+    50% {
+        clip-path: polygon(
+            0% 60%,
+            15% 65%,
+            34% 66%,
+            51% 62%,
+            67% 50%,
+            84% 45%,
+            100% 46%,
+            100% 100%,
+            0% 100%
+        );
+    }
+}
+
+.pulsate {
+    color: red;
+    -webkit-animation: pulsate 0.8s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    opacity: 0.5;
+}
+@-webkit-keyframes pulsate {
+    0% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+    }
+    35% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 1;
+    }
+    65% {
+        opacity: 0.2;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.pulsates {
+    color: red;
+    animation: 0.8s pulsates ease infinite;
+}
+
+@keyframes pulsates {
+    0% {
+        color: red;
+        -webkit-transform: scale(1);
+        opacity: 1;
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+    30% {
+        color: red;
+        -webkit-transform: scale(1);
+        opacity: 1;
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+    35% {
+        color: red;
+        -webkit-transform: scale(1.1);
+        opacity: 1;
+        text-shadow: 1px 10px 4px rgba(255, 0, 0, 0.8);
+    }
+    50% {
+        color: red;
+        -webkit-transform: scale(1);
+        opacity: 1;
+        text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+    }
+    65% {
+        color: red;
+        -webkit-transform: scale(1.1);
+        opacity: 1;
+        text-shadow: 2px 7px 4px rgba(255, 0, 0, 0.8);
+    }
+    70% {
+        color: red;
+        -webkit-transform: scale(1);
+        opacity: 1;
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+        color: red;
+        -webkit-transform: scale(1);
+        opacity: 1;
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
 /*-----------------------------------------------
 |   User Styles
 -----------------------------------------------*/
