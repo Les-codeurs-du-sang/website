@@ -49,3 +49,9 @@ Route::post('/admin/questions', [\App\Http\Controllers\QuestionController::class
 Route::get('/admin/questions/{question}/edit', [\App\Http\Controllers\QuestionController::class, 'edit'])->name('admin.question.edit');
 Route::patch('/admin/questions/{question}', [\App\Http\Controllers\QuestionController::class, 'update'])->name('admin.question.update');
 Route::delete('/admin/questions/{question}/delete', [\App\Http\Controllers\QuestionController::class, 'delete'])->name('admin.question.delete');
+
+// Journee
+Route::get('/admin/journees', [\App\Http\Controllers\JourneeController::class, 'index'])->name('admin.journee.index');
+Route::get('/admin/journees/{journee}/show', [\App\Http\Controllers\JourneeController::class, 'show'])->name('admin.journee.show');
+Route::get('/admin/journees/create', [\App\Http\Controllers\JourneeController::class, 'create'])->name('admin.journee.create');
+Route::post('/admin/journee', [\App\Http\Controllers\JourneeController::class, 'store'])->name('admin.journee.store');

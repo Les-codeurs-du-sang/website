@@ -14,6 +14,8 @@
                     Promotions
                 @elseif(Request::is('admin/questions*'))
                     Questions
+                @elseif(Request::is('admin/journees*'))
+                    Journées
                 @else
                     Dashboard
                 @endif
