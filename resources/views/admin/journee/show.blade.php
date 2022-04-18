@@ -47,6 +47,8 @@
                         </tbody>
                     </table>
                 </div>
+                <hr />
+                <a class="btn btn-primary" href="{{ route('admin.journee.edit', $journee->id) }}">Editer</a>
             </div>
         </div>
     </div>

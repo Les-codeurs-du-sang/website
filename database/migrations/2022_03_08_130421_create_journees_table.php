@@ -18,7 +18,7 @@ class CreateJourneesTable extends Migration
             $table->date('date');
             $table->time('heureDebut');
             $table->time('heureFin');
-            $table->string('typeDon');
+            $table->integer('typeDon');
             $table->timestamps();
         });
     }

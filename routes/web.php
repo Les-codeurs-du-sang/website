@@ -55,3 +55,5 @@ Route::get('/admin/journees', [\App\Http\Controllers\JourneeController::class, '
 Route::get('/admin/journees/{journee}/show', [\App\Http\Controllers\JourneeController::class, 'show'])->name('admin.journee.show');
 Route::get('/admin/journees/create', [\App\Http\Controllers\JourneeController::class, 'create'])->name('admin.journee.create');
 Route::post('/admin/journee', [\App\Http\Controllers\JourneeController::class, 'store'])->name('admin.journee.store');
+Route::get('/admin/journee/{journee}/edit', [\App\Http\Controllers\JourneeController::class, 'edit'])->name('admin.journee.edit');
+Route::patch('/admin/journee/{journee}', [\App\Http\Controllers\JourneeController::class, 'update'])->name('admin.journee.update');
