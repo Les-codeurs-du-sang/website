@@ -30,6 +30,7 @@ class UserSeeder extends Seeder
             'email' => 'admin@admin.fr',
             'password' => '$2y$10$NvP8.zszKNBGixe3u7jdJ.1bdTfGC8ANpL6GZRPNbJfliMKglZ4/q',
             'remember_token' => Str::random(10),
+            'isAdmin' => 1,
             'promotion_id' => 1
         ]);
     }
