@@ -15,8 +15,8 @@ class CreateJourneeUserTable extends Migration
     {
         Schema::create('journee_user', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('journee_id')->constrained();
-            $table->foreignId('user_id')->constrained();
+            $table->foreignId('journee_id')->constrained()->cascadeOnDelete();
+            $table->foreignId('user_id')->constrained()->cascadeOnDelete();
             $table->time('heure_reservation');
             $table->timestamps();
         });

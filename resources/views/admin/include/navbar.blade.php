@@ -29,7 +29,7 @@
                     <a href="javascript:;" class="nav-link text-body font-weight-bold px-0">
                         <div class="dropdown">
                             <button class="dropdown-toggle bg-transparent border-0 text-2xl text-gray-500 text-bold" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                {{ Auth::user()->name }}
+                                {{ Auth::user()->name }} {{ Auth::user()->lastname }}
                             </button>
                             <form action="{{ route('logout') }}" method="POST" class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                 @csrf

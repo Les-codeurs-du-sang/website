@@ -6,7 +6,10 @@
             <div class="card-header pb-0">
                 <div class="d-flex justify-content-between align-items-center">
                     <h6>Utilisateurs</h6>
-                    <a class="btn btn-primary" href="{{ route('admin.users.create') }}">AJouter un utilisateur</a>
+                    <div>
+                        <a class="btn btn-primary" href="{{ route('admin.users.import') }}">Importer via CSV</a>
+                        <a class="btn btn-primary" href="{{ route('admin.users.create') }}">Ajouter un utilisateur</a>
+                    </div>
                 </div>
             </div>
             <div class="card-body px-0 pt-0 pb-2">
