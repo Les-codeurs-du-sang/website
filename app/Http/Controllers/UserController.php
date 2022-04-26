@@ -46,14 +46,17 @@ class UserController extends Controller
     public function store(Request $request) {
 
         $request->validate([
-            'name' => 'required|unique:users,name',
+            'name' => 'required',
+            'lastname' => 'required',
             'promotion' => 'required|exists:promotions,id',
             'mail' => 'required|email|unique:users,email',
-            'password' => 'required|password',
+            'password' => 'required',
         ]);
 
         User::create([
             'name' => $request->name,
+            'lastname' => $request->lastname,
+            'pseudo' => strtolower($request->name[0]) . strtolower($request->lastname),
             'email' => $request->mail,
             'promotion_id' => $request->promotion,
             'password' => Hash::make($request->password),

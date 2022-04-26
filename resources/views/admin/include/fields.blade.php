@@ -1,8 +1,17 @@
 @csrf
 <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Prénom et Nom</label>
+    <label for="exampleInputEmail1" class="form-label">Prénom</label>
     <input name="name" value="{{ old('name') ?? $user->name }}" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
     @error('name')
+    <div class="alert alert-danger mt-2" role="alert">
+        {{ $message }}
+    </div>
+    @enderror
+</div>
+<div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Nom</label>
+    <input name="lastname" value="{{ old('lastname') ?? $user->lastname }}" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+    @error('lastname')
     <div class="alert alert-danger mt-2" role="alert">
         {{ $message }}
     </div>
