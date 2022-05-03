@@ -11,7 +11,7 @@
             </ul>
             @guest
             <form class="d-flex py-3 py-lg-0">
-                <a href="{{ route('login') }}" class="btn {{ request()->routeIS('blood_marrow.home') ? 'btn-outline-warning' : 'btn-outline-danger' }} rounded-pill order-0">Se connecter</a>
+                <a class="btn {{ request()->routeIS('blood_marrow.home') ? 'btn-outline-warning' : 'btn-outline-danger' }} rounded-pill order-0" href="{{ route('login') }}">Se connecter</a>
             </form>
             @else
             <div class="dropdown">
