@@ -10,4 +10,8 @@ class Promotion extends Model
     use HasFactory;
 
     protected $fillable = ['titre'];
+
+    public function users() {
+        return $this->hasMany('App\Models\User');
+    }
 }

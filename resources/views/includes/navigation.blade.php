@@ -18,10 +18,15 @@
                 <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                     {{ Auth::user()->name }}
                 </button>
-                <form action="{{ route('logout') }}" method="POST" class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    @csrf
-                    <button class="dropdown-item" type="submit">Se déconnecter</button>
-                </form>
+                <div class="dropdown-menu">
+                    @if(Auth::user()->isAdmin == 1)
+                    <a href="{{ route('admin.index') }}" class="dropdown-item">Panneau d'administration</a><hr />
+                    @endif
+                    <form action="{{ route('logout') }}" method="POST"  aria-labelledby="dropdownMenuButton1">
+                        @csrf
+                        <button class="dropdown-item" type="submit">Se déconnecter</button>
+                    </form>
+                </div>
             </div>
             @endguest
         </div>

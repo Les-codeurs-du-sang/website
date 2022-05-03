@@ -12,6 +12,7 @@
         "laravel/jetstream": "^2.6",
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
+        "league/csv": "^9.8",
         "livewire/livewire": "^2.5"
     },
     "require-dev": {
@@ -57,7 +58,9 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "disable-tls": false,
+        "secure-http": false
     },
     "minimum-stability": "dev",
     "prefer-stable": true

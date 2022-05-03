@@ -12,6 +12,6 @@ class Journee extends Model
     protected $fillable = ['date', 'heureDebut', 'heureFin', 'typeDon'];
 
     public function users() {
-        return $this->belongsToMany('App\Models\Users')->withPivot('heure_reservation');
+        return $this->belongsToMany('App\Models\User')->withPivot('heure_reservation');
     }
 }
