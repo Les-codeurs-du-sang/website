@@ -35,5 +35,16 @@ class UserSeeder extends Seeder
             'isAdmin' => 1,
             'promotion_id' => 1
         ]);
+
+        User::create([
+            'name' => 'eleve',
+            'lastname' => 'eleve',
+            'pseudo' => 'eleve',
+            'email' => 'eleve@eleve.fr',
+            'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi',
+            'remember_token' => Str::random(10),
+            'isAdmin' => 0,
+            'promotion_id' => 1
+        ]);
     }
 }
