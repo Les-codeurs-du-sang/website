@@ -20,6 +20,9 @@ Route::get('/blood-donation/create',  [\App\Http\Controllers\BloodController::cl
 
 Route::get('/blood-marrow', [\App\Http\Controllers\BoneMarrowController::class, 'home'])->name("blood_marrow.home");
 
+Route::get('/blood-donation/register-blood', [\App\Http\Controllers\BloodController::class, 'subscribe'])->name("subscribeBlood");
+Route::post('/blood-donation/create/end', [\App\Http\Controllers\BloodController::class, 'registerBlood'])->name('registerBlood');
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
