@@ -17,7 +17,6 @@ class CreateJourneeUserTable extends Migration
             $table->id();
             $table->foreignId('journee_id')->constrained()->cascadeOnDelete();
             $table->foreignId('user_id')->constrained()->cascadeOnDelete();
-            $table->time('heure_reservation');
             $table->timestamps();
         });
     }

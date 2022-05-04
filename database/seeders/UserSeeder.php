@@ -22,7 +22,7 @@ class UserSeeder extends Seeder
 
         User::all()->each(function ($user) {
             $journee = \App\Models\Journee::inRandomOrder()->first();
-            $user->journees()->attach($journee->id, ['heure_reservation' => now()]);
+            $user->journees()->attach($journee->id);
         });
 
         User::create([

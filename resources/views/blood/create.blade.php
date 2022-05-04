@@ -103,7 +103,7 @@
                 </div>
             </div>
             <!-- end of .container-->
-
+            <a class="btn btn-lg btn-danger hover-top btn-glow" href="{{ route('subscribeBlood') }}">Je veux m'inscrire !</a>
         </section>
         <!-- <section> close ============================-->
         <!-- ============================================-->
