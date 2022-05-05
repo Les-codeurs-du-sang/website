@@ -33,7 +33,7 @@
 
         <!-- ============================================-->
         <!-- <section> begin ============================-->
-        <section id="condition" class="pt-4 pt-md-6">
+        <section id="condition" class=" bg-100 pt-4 pt-md-6">
 
             <div class="container">
                 <div class="row align-items-center">
@@ -99,11 +99,49 @@
                                 <p class="ms-2">Vous êtes enceinte.</p>
                             </div>
                         </div>
+                        <!-- Button trigger modal -->
+                        <a class="btn btn-lg btn-danger hover-top btn-glow mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Je veux m'inscrire !
+                        </a>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <form method="POST" action="{{ route("registerBlood") }}">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">S'inscrire</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                            @csrf
+                                            <div class="mb-3">
+                                                <label for="journeeChoisie" class="col-form-label">Journée choisie</label>
+                                                <select class="form-select" id="journeeChoisie" name="journeeChoisie" style="width: 350px" aria-label="Choississez une journée">
+                                                    @foreach ($lesJournees as $journee)
+                                                        <option value="{{ $journee->id }}">Journée du
+                                                            {{ \Carbon\Carbon::parse($journee->date)->format('d-m-Y') }} de
+                                                            {{ \Carbon\Carbon::parse($journee->heureDebut)->format('H:i') }} à
+                                                            {{ \Carbon\Carbon::parse($journee->heureFin)->format('H:i') }}</option>
+                                                    @endforeach
+                                                </select>
+                                            </div>
+                                            <input id="idUser" name="idUser" type="hidden" value="{{ Auth::user()->id }}">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="submit" class="btn btn-danger">S'inscrire</button>
+                                    </div>
+                                </div>
+                            </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
+
             </div>
             <!-- end of .container-->
-            <a class="btn btn-lg btn-danger hover-top btn-glow" href="{{ route('subscribeBlood') }}">Je veux m'inscrire !</a>
+
         </section>
         <!-- <section> close ============================-->
         <!-- ============================================-->

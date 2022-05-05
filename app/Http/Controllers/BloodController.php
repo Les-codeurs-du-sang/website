@@ -21,7 +21,8 @@ class BloodController extends Controller
     }
 
     public function create() {
-        return view('blood.create');
+        $lesJournees = Journee::all();
+        return view('blood.create', compact('lesJournees'));
     }
 
     public function subscribe(){

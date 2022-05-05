@@ -54,7 +54,11 @@
             </div>
         </div>
     @endif
-    @yield('content')
+
+    <main>
+        @yield('content')
+    </main>
+
     @include('includes.footer')
 
 
